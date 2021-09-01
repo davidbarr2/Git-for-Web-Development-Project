@@ -1,0 +1,116 @@
+Link to finished codepen: https://codepen.io/little_cheeba/pen/mdwPJpy?editors=1100
+
+    1. What is Semantic HTML? 
+        It is HTML that gives meaning to our markup.
+    2. What is HTML used for? 
+        HTML is used to build websites; it is the "what" of a website, like the lumber and piping if you were building a house.
+    3. What is an attribute and where do we put it? 
+        An attribute is a property of an HTML element. It goes in the opening tag after the element name but before the closing bracket.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        The main title of a page. It should only be used once per page.
+    5. Name two tags that have required attributes
+        <img> and <input>
+    6. What do we put in the head of our HTML document? 
+        In the head you should use a <header> tag. Inside of that you will probably want an <h1> tag and <nav>.
+    7. What is an id? 
+        An ID is an attribute to specify a unique instance of an element. 
+    8. What elements can I add an id to? 
+        Any HTML element
+    9. How many times can I use the same id on a page? 
+        Once
+    10. What is a class? 
+        A class is a subset of HTML elements defined by the developer so that they can apply all changes to elements within that class to keep code DRY.
+    11. What elements can I add a class to? 
+        Any HTML element
+    12. How many times can I use the same class on a page? 
+        Unlimited
+    13. How do I get my link to open in a new tab?
+        Use an anchor tag with property target="_blank" i.e. <a href="https://link.com" target="_blank">Link title</a>
+    14. What is the alt attribute in the image tag used for?
+         Provide text to display to user in case the IMG cannot be displayed.
+    15. How do I reference an id?
+        #
+    16. What is the difference between a section and a div
+        Section is a semantic tag to define a portion of the page that relates to a single theme. Div is a non-semantic tag and should be used a last resort when semantic tags will not do.
+    17. What is CSS used for? 
+        Styling
+    18. How to we select an element? Example - every h2 on the page
+        h2 { attribute: value; }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        Class is a one-to-many relationship whereas id is one-to-one. For instance, I might have a class for photo captions so that I can style all of those the same way. I might use an ID for a specific section so that my navigation goes to that specific section.
+    20. How do we select classes in CSS?
+        .class { attribute: value; }
+    21. How do we select a p element with a single class of “human””?
+        p.human {
+            attribute: value;
+        }
+    22. What is a parent child selector? When would this be useful? 
+        parent child {
+            attirbute: value;
+        }
+        This is useful if you have a large page and, say, want to style the paragraphs within each section differently
+    23. How do you select all links within a div with the class of sidebar?
+        div.sidebar a {
+            attirbute: value;
+        }
+    24. What is a pseudo selector?
+        A style that only applies conditionally based on the user's behavior- such as hover, visited, and clicked.
+    25. What do we use the change the spacing between lines?
+        line-height
+    26. What do we use to change the spacing between letters?
+        letter-spacing
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: captalize;
+    28. How do I add a 1px border around my div that is dotted and black?
+        div {
+            border: 1px dotted black
+        }
+    29. How do I select everything on the page? 
+        * {
+            attirbute: value;
+        }
+    30. How do I write a comment in CSS?
+        /* comment */
+    31. How do I find out what file I am in, when I am using the command line? 
+        pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm filename. Be careful because you may delete something you need.
+    34. Why should I use version control? 
+        To ensure you don't lose work and can revert changes that introduce bugs.
+    35. How often should I commit to github?
+        Every 20 minutes.
+    36. What is the command we would use to push our repo up to github? 
+        git push -u origin first-last
+    37. Walk me through Lambda's git flow. 
+        1. Fork
+        2. Clone using SSH - copy link to clipbord
+        3. git clone *paste*
+        4. cd to that file
+        5. git checkout -b first-last
+        6. Code
+        7. git add .
+        8. git commit -m "msg here"
+        9. git push -u origin david-barr
+        10. pull request
+
+        In English, I create a copy on my Github, clone it locally, make changes, upload it to my Github, then create a request for Lambda to review my uploaded Github file
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        Inline does not skip to the next line, block does.
+    2. What happens when an element is positioned absolutely? 
+        The element will always be rendered in that position regardless of device type or window size.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        IDK
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Block: <header> <h1> <section>
+        Inline: <span> <a>
+        Inline-block: <img>
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        A box model is an analogy for how elements are formatted together. The content is in the middle. The space between content and the box is called padding. The width of the box is the border. The space between the box and the window is called the margin.
+        
